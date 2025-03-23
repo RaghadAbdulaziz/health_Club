@@ -1,0 +1,133 @@
+<!--
+Raghad Abdulaziz 2105119
+Huda Alim 2105773
+Section: GAR
+Date: 23/3/2025
+--->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership | Health Club</title>
+    <link rel="stylesheet" href="../global/style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <img src="../images/logo1.png" alt="Logo">
+    </div>
+    <nav class="nav-menu">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="coaches.html">Our Coaches</a></li>
+           <li><a href="membership.html">Membership</a></li>
+          <li><a href="contact.html">Contact Us</a></li>            
+        </ul>
+    </nav>
+</header>
+
+<!-- Membership Table -->
+<section class="membership">
+    <h1>Our Membership Plans</h1>
+    <table class="membership-table">
+        <tr class="criteria">
+            <th rowspan="2">Plan</th>
+            <th rowspan="2">Price</th>
+            <th colspan="3">Features</th>
+        </tr>
+        <tr>
+            <th>Gym Access</th>
+            <th>Personal Training</th>
+            <th>Yoga & Wellness</th>
+        </tr>
+        <tr>
+            <td>Basic</td>
+            <td>$130/month</td>
+            <td>Included</td>
+            <td>Not Included</td>
+            <td>Not Included</td>
+        </tr>
+        <tr>
+            <td>Premium</td>
+            <td>$170/month</td>
+            <td>Included</td>
+            <td>Included</td>
+            <td>Not Included</td>
+        </tr>
+        <tr>
+            <td>VIP</td>
+            <td>$200/month</td>
+            <td>Included</td>
+            <td>Included</td>
+            <td>Included</td>
+        </tr>
+    </table>
+</section>
+
+<!-- Sign-up Form -->
+<section class="signup">
+    <h2>Become a Member</h2>
+    <form action="submit-membership.php" method="POST">
+        <!-- Text Fields -->
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+
+        <!-- Radio Buttons -->
+        <label>Payment Method:</label>
+    
+        <div class="radio-group">
+            <label for="credit">Credit Card</label>
+            <input type="radio" id="credit" name="payment" value="Credit Card">
+           
+            <label for="cash">Cash</label>
+            <input type="radio" id="cash" name="payment" value="Cash">
+   
+        </div>
+
+        <!-- Checkboxes -->
+        <label>Additional Add-ons:</label>
+        <div class="checkbox-group">
+            <input type="checkbox" id="trainer" name="addons" value="Personal Trainer">
+            <label for="trainer">Personal Trainer</label>
+
+            <input type="checkbox" id="nutrition" name="addons" value="Nutrition Plan">
+            <label for="nutrition">Nutrition Plan</label>
+
+            <input type="checkbox" id="sauna" name="addons" value="Sauna Access">
+            <label for="sauna">Sauna Access</label>
+        </div>
+
+        <!-- Dropdown Menu -->
+        <label for="duration">Select Membership Duration:</label>
+        <select id="duration" name="duration">
+            <option value="1 Month">1 Month</option>
+            <option value="3 Months">3 Months</option>
+            <option value="6 Months">6 Months</option>
+            <option value="1 Year">1 Year</option>
+        </select>
+
+        <!-- Textarea -->
+        <label for="comments">Additional Comments:</label>
+        <textarea id="comments" name="comments" rows="4"></textarea>
+
+        <!-- Submit Button -->
+        <button type="submit">Sign Up</button>
+    </form>
+</section>
+
+<!-- Footer -->
+<footer>
+    <h5>&copy; 2025 Health Club. All rights reserved.</h5>
+</footer>
+
+</body>
+</html>
